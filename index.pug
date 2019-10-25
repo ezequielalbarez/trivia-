@@ -27,4 +27,5 @@ html
           ol(type='A')
             each answer in question.answers
               li= answer.title
-                input(type='radio' value=answer.title name='answer') 
+                input(type='radio' value=answer.title name='question_id'  onclick='check()' correcta=answer.isRight?'true' : 'false') 
+                
