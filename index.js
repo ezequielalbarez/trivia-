@@ -18,7 +18,7 @@ mongoose
   })
 .catch(err => console.error(`Connection error ${err}`));
 
-// schema y modelo de pregunta
+//modelo de pregunta
 const QuestionSchema = new mongoose.Schema({
   title: { type: String, required: true },
   answers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Answer' }]
